@@ -1,0 +1,117 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+/* Código superior de la página */
+    .top{
+        background-color: #000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        /* Coso de barra-principal */
+        .texto-principal{
+            background-color: #F9F5EB;
+        }
+            .barra-principal_1{
+                background-color: #EA5455;
+            }
+        /* Coso de barra-variables */
+        .barra{
+            background-color: #F9F5EB;
+            display: flex;
+            flex-flow: row nowrap;
+
+            height: 100px;
+
+            align-items: center;
+        }
+            .barra-contenido_0{
+                background-color: #EA5455;
+                flex: 4 1 auto;
+                height: 30px;
+            }
+            .barra-contenido_1{
+                background-color: #EA5455;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+            .barra-contenido_2{
+                background-color: #EA5455;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+            .barra-contenido_3{
+                background-color: #EA5455;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+            .barra-contenido_4{
+                background-color: #EA5455;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+/* Código principal de la página */
+    .mid{
+        background-color: #000;
+        display: flex;
+    }
+        .section-1{
+            background-color: #F9F5EB;
+            flex: 1 1 auto;
+        }
+            .contenido{
+                background-color: #EA5455;
+            }
+
+
+/* Código inferio de la página */
+    .bottom{
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+    }
+        .texto-final{
+            background-color: #EA5455;
+            width: 500px;
+        }
+
+
+
+@media all and(max-width:800px) {
+    .mid{
+        flex-direction: column;
+    }
+    .barra{
+        flex-direction: column;
+        height: auto;
+    }
+    .section-1{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and(max-width:600px) {
+    .section-1{
+        flex-direction: column;
+    }
+    .barra{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media all and(max-width:400px) {
+    .section-1{
+        flex-direction: column;
+    }
+    .barra{
+        flex-direction: column;
+        height: auto;
+    }
+}
