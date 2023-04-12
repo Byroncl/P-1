@@ -1,73 +1,114 @@
 *{
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
+/* Extra */
+.margen{
+    padding: 0 50px;
+}
+
 /* Código superior de la página */
     .top{
-        background-color: #000;
+        background: url(../image/hero.png);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+
         display: flex;
         flex-flow: column nowrap;
     }
         /* Coso de barra-variables */
         .barra{
-            background-color: #F9F5EB;
+            background-color: rgba(0, 0, 0, 0.3);
             display: flex;
             flex-flow: row nowrap;
 
-            height: 100px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+            height: 60px;
 
             align-items: center;
         }
             .logo{
-                background-color: #EA5455;
-                flex: 1 1 auto;
-                height: 30px;
+                flex: 3 1 auto;   
             }
+                .logo a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+                .logo a:hover{
+                    color: #EA5455;
+                }
+
             .barra-contenido{
-                background-color: #EA5455;
-                flex: 3 1 auto;
-                height: 30px;
+                flex: 2 1 auto;
+                padding: 0 10px;
+                letter-spacing: 2px;     
             }
+                .barra-contenido a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+                .barra-contenido a:hover{
+                    color: #EA5455;
+                }
             /* Coso de barra-principal */
         .texto-principal{
-            background-color: #F9F5EB;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
             .barra-principal_1{
-                background-color: #EA5455;
+                color: #fff;
+                text-align: center;
+                      
             }
+                .barra-principal_1 a:hover{
+                    color: #EA5455;
+                }
 /* Código principal de la página */
     .mid{
-        background-color: #000;
+        background-color: #fff;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
         .section-1{
-            background-color: #F9F5EB;
-            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
             .contenido{
-                background-color: #EA5455;
+                margin: 20px;
+                text-align: center;
             }
 
 
 /* Código inferio de la página */
     .bottom{
-        background-color: #000;
         display: flex;
         justify-content: center;
+        
+        
     }
         .texto-final{
-            background-color: #EA5455;
-            width: 500px;
+            text-align: center;
         }
 
 
 
-@media all and(max-width:800px) {
+@media all and(max-width:948px) {
     .mid{
         flex-direction: column;
     }
@@ -79,7 +120,12 @@
         display: flex;
         justify-content: center;
     }
+    .barra-principal_1{
+        font-size: 15px;
+    }
 }
+
+
 
 @media all and(max-width:600px) {
     .section-1{
