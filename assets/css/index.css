@@ -81,7 +81,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        
     }
         .section-1{
             display: flex;
@@ -99,15 +99,13 @@
     .bottom{
         display: flex;
         justify-content: center;
-        
-        
     }
         .texto-final{
             text-align: center;
         }
 
 
-
+/* Responsivo */
 @media all and(max-width:948px) {
     .mid{
         flex-direction: column;
@@ -145,4 +143,43 @@
         flex-direction: column;
         height: auto;
     }
+}
+
+/* Extra */
+
+/* Diseño de Tabla */
+table{
+    width: 100%;
+}
+th, td{
+    width: 90%;
+    
+}
+.refe{
+    border: 1px solid #696767;
+    text-align: left;
+    border-spacing: 0;
+    padding: 1px;
+    border-radius: 5px;
+}
+th{
+    background: #EA5455;
+    color: #fff;
+}
+.th{
+    border: #EA5455;
+    text-align: center;
+    border-radius: 10px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+}
+.titulo, th, td{
+    font-size: 15px;
+}
+.contenido:hover{
+    background: #eb8787;
+    border-radius: 20px;
 }
